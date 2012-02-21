@@ -15,7 +15,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "hack", "surf", "chat", "dump", "wait" };
+static const char *tags[] = { "hack", "surf", "chat", "dump" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
@@ -24,7 +24,7 @@ static const Rule rules[] = {
 	{ "MPlayer",  NULL,       NULL,       ~0,           True,        -1 },
 	{ NULL,       NULL,       "irssi",    1 << 2,       False,       -1 },
 	{ NULL,       NULL,       "ncmpcpp",  1 << 0,       False,       -1 },
-	{ NULL,       NULL,       "rtorrent", 1 << 4,       False,       -1 },
+	{ NULL,       NULL,       "rtorrent", 1 << 3,       False,       -1 },
 };
 
 /* layout(s) */
