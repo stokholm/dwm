@@ -50,6 +50,8 @@ static const char *dmenu[]     = { "dmenu_run", "-fn", font, "-nb", normbgcolor,
                                    normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *term[]      = { "urxvt", NULL };
 static const char *halt[]      = { "sudo", "halt", NULL };
+static const char *hdmi[]      = { "hdmi", NULL };
+static const char *lvds[]      = { "lvds", NULL };
 static const char *voldown[]   = { "volset", "5%-", "unmute", NULL };
 static const char *volup[]     = { "volset", "5%+", "unmute", NULL };
 static const char *voltoggle[] = { "volset", "toggle", NULL };
@@ -59,6 +61,8 @@ static Key keys[] = {
 	{ MODKEY,           XK_p,                    spawn,          {.v = dmenu } },
 	{ MODKEY|ShiftMask, XK_Return,               spawn,          {.v = term } },
 	{ 0,                XF86XK_PowerOff,         spawn,          {.v = halt } },
+	{ MODKEY|ShiftMask, XK_h,                    spawn,          {.v = hdmi } },
+	{ MODKEY|ShiftMask, XK_l,                    spawn,          {.v = lvds } },
 	{ 0,                XF86XK_AudioLowerVolume, spawn,          {.v = voldown } },
 	{ 0,                XF86XK_AudioRaiseVolume, spawn,          {.v = volup } },
 	{ 0,                XF86XK_AudioMute,        spawn,          {.v = voltoggle } },
