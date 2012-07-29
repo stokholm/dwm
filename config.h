@@ -49,7 +49,7 @@ static const Layout layouts[] = {
 static const char *dmenu[]     = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", \
                                    normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *term[]      = { "urxvt", NULL };
-static const char *halt[]      = { "sudo", "halt", NULL };
+static const char *halt[]      = { "sudo", "poweroff", NULL };
 static const char *hdmi[]      = { "hdmi", NULL };
 static const char *lvds[]      = { "lvds", NULL };
 static const char *voldown[]   = { "volset", "5%-", "unmute", NULL };
