@@ -49,7 +49,6 @@ static const Layout layouts[] = {
 static const char *dmenu[]     = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", \
                                    normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *term[]      = { "urxvt", NULL };
-static const char *halt[]      = { "sudo", "poweroff", NULL };
 static const char *hdmi[]      = { "hdmi", NULL };
 static const char *lvds[]      = { "lvds", NULL };
 static const char *voldown[]   = { "volset", "5%-", "unmute", NULL };
@@ -60,7 +59,6 @@ static Key keys[] = {
 	/* modifier         key                      function        argument */
 	{ MODKEY,           XK_p,                    spawn,          {.v = dmenu } },
 	{ MODKEY|ShiftMask, XK_Return,               spawn,          {.v = term } },
-	{ 0,                XF86XK_PowerOff,         spawn,          {.v = halt } },
 	{ MODKEY|ShiftMask, XK_h,                    spawn,          {.v = hdmi } },
 	{ MODKEY|ShiftMask, XK_l,                    spawn,          {.v = lvds } },
 	{ 0,                XF86XK_AudioLowerVolume, spawn,          {.v = voldown } },
